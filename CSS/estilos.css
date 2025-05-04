@@ -1,0 +1,454 @@
+body {
+  background-color: #ffffff;
+  color: #fff;
+}
+
+.LogoBlanco img{
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 5.5%;
+  height: auto;
+  margin-left: 92%;
+  margin-top: -0.5%;
+  position: fixed;
+
+}
+
+.navbar-nav{
+  overflow: hidden; 
+  height: auto;
+}
+.navbar-nav a {
+  color: white;
+  font-family: "Poppins", Sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar-nav a:hover {
+  margin-left: 10px;
+  color: white;
+  background: rgb(227, 31, 43);
+  padding: 10px 10px 10px 10px;
+  
+}
+
+.offcanvas-start {
+  background-color: rgb(188, 33, 48);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offcanvas-title {
+  color: #fff;
+}
+.offcanvas-body {
+  overflow-y: hidden; /* Elimina el scroll vertical */
+  height: auto; 
+  margin-right: 1%;
+}
+
+
+.nav-link {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 1% 0%;
+  margin-bottom: 250px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  font-size: 20px;
+}
+
+.btn {
+  border: none;
+  border-radius: 50px;
+  position: fixed;
+  top: 0px;
+  left: 15px;
+  width: 53px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 1001;
+  background: #E31F2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  box-shadow: 0 0 10px rgb(141, 28, 37);
+}
+
+.btn img {
+  width: 30%;
+  height: auto;
+  object-fit: contain;
+
+}
+
+.btn:hover {
+  background-color: rgb(141, 28, 37);
+}
+
+.btn:active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-banner,
+.main-banner2 {
+  background: url('/IMG/DibuMostaza.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-banner2 {
+  background: url('/IMG/Hamburguesa1.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-banner2 img {
+  transition: transform 0.3s ease;
+  background-size: cover;
+  height: 13vh;
+  width: 13vh;
+  margin-top: 100px;
+  margin-left: 5px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  opacity: 1;
+
+}
+
+.main-banner2 img:hover {
+  background-color: rgb(188, 33, 48);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+
+.textoMenu {
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.main-banner3 {
+  background: url('/IMG/Hamburguesas2.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-banner3 img {
+  transition: transform 0.3s ease;
+  background-size: cover;
+  height: 11vh;
+  width: 86vh;
+  margin-top: -21%;
+  margin-left: 36%;
+}
+
+.main-banner3 p {
+  margin-top: -90px;
+  margin-bottom: 1rem;
+  margin-left: 37%;
+}
+
+.textoApp {
+  font-family: "Poppins", Sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.APK img {
+  background-size: cover;
+  height: 9vh;
+  width: 22vh;
+  margin-top: 30px;
+  margin-left: 36%;
+}
+
+.APK a {
+  height: auto;
+  max-width: 97%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.APK1 img {
+  background-size: cover;
+  height: 9vh;
+  width: 22vh;
+  margin-top: -106px;
+  margin-left: 66%;
+}
+
+.APK1 a {
+  height: auto;
+  max-width: 97%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.main-banner4 {
+  background: url('/IMG/Locales.png') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-banner4 img {
+
+  background-size: cover;
+  height: 13vh;
+  width: 13vh;
+  margin-top: 100px;
+  margin-left: 5px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.main-banner4 img:hover {
+  background-color: rgb(188, 33, 48);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+
+.textoLocal {
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+
+
+
+/* Contenedor principal del formulario */
+form {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos generales de etiquetas */
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Estilos para inputs, selects y textarea */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  transition: 0.3s ease-in-out;
+}
+
+.textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Efecto de hover en inputs */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: rgb(227, 31, 43);
+  outline: none;
+}
+
+/* Estilo del botón */
+
+button:hover {
+  background-color: rgb(200, 25, 35);
+}
+
+/* Espaciado entre los elementos */
+.mb-3 {
+  width: 100%;
+  text-align: left;
+}
+
+/* Ajuste para la responsividad */
+@media (max-width: 500px) {
+  form {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+.half-circle-menu {
+  position: fixed;
+  bottom: -10px;
+  width: 100%;
+  z-index: 10;
+  padding: 10px 0;
+  background: transparent;
+}
+
+.half-circle {
+  width: 175px;
+  height: 85px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.half-circle a {
+  color: #ffffff;
+}
+
+.half-circle:hover {
+  background-color: rgb(188, 33, 48)
+}
+
+.social-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #E31F2B;
+}
+
+
+@media (max-width: 768px) {
+  .half-circle {
+    width: 100px;
+    height: 50px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 850px) {
+  body {
+    font-size: 16px; /* Ajusta el tamaño de la fuente general */
+  }
+
+  .LogoBlanco img {
+    width: 10%;
+    margin-left: 85%;
+  }
+
+  .navbar-nav a {
+    font-size: 1rem; /* Reduce el tamaño del texto del menú */
+  }
+
+  .social-icons {
+    gap: 15px; /* Reduce el espacio entre los iconos */
+  }
+
+  .main-banner {
+    min-height: 90vh; /* Reduce la altura de los banners */
+  }
+  .main-banner3 {
+    background: url(/IMG/Hamburguesas2.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 125vh;
+    width: 297%;
+  }
+  .main-banner3 p {
+    line-height: 1;
+    font-size: 14px; 
+    max-width: -600px; 
+    margin: auto;
+}
+  .main-banner3 img {
+    width: 50vh;
+    height: 6vh;
+    margin-left: -104%;
+    margin-top: 74px;
+    }
+
+    .APK img {
+      width: 30vh;
+      height: 12vh;
+      margin-left: -293px;
+  }
+
+  .APK1 img {
+    width: 30vh;
+    height: 12vh;
+    margin-left: -294px;
+    margin-top: 72px;
+}
+
+  form {
+    max-width: 90%; /* Hace el formulario más adaptable */
+    padding: 20px;
+  }
+  .textoApp {
+        text-align: right;
+        padding-right: 20px;
+  }
+}

@@ -1,0 +1,171 @@
+.FondoBlanco {
+    position: relative; /* Para que los elementos hijos puedan posicionarse encima */
+    width: 100%;
+    height: 100vh; /* Toda la pantalla */
+    overflow: hidden; /* Evita que el contenido desborde */
+}
+
+.FondoBlanco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -752px;
+    left: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* 100% del alto de la pantalla */
+    padding: 30px;
+    box-sizing: border-box;
+    /* Para que padding no afecte el tamaño */
+
+}
+
+h1 {
+    color: rgb(122, 122, 122);
+    font-size: 0.83em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: rgb(122, 122, 122);
+    font-size: 0.83em;
+    text-align: justify;
+}
+
+h5 {
+    margin-left: 40px;
+    color: rgb(122, 122, 122);
+    font-size: 0.83em;
+    text-align: justify;
+    font-size: 0.83em;
+    font-weight: bold;
+}
+
+/* Listas y textos */
+ul {
+    color: rgb(122, 122, 122);
+    font-size: 0.83em;
+    text-align: justify;
+    font-size: 0.83em;
+    font-weight: bold;
+}
+
+li {
+    background: rgb(244, 244, 244);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    line-height: 1.1%;
+}
+
+p {
+    font-size: 0.83em;
+    font-weight: bold;
+    color: rgb(122, 122, 122);
+    margin-bottom: 10px;
+
+}
+
+.Preguntas {
+    line-height:0.5;
+}
+ .Preguntas p{
+    line-height:0.5;
+ }
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Estilos del botón */
+.button-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Espacio entre el texto y el botón */
+}
+
+.btns {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50; /* Verde */
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+/* Efecto hover */
+.btns:hover {
+    background-color: #388E3C;
+}
+
+.container {
+    width: 90%;
+    max-width: 750px; /* Ajuste del ancho */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Estilo para pantallas pequeñas (móviles) */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    h1, h2, h5, p, ul, li {
+        font-size: 0.7em; /* Reduce el tamaño de texto */
+    }
+    .btns {
+        padding: 10px 20px; /* Ajusta el tamaño del botón */
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+    h1, h2, h5, p, ul, li {
+        font-size: 0.8em; /* Tamaño de texto medio */
+    }
+    .btns {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    .container {
+        width: 70%;
+        padding: 30px;
+    }
+    h1, h2, h5, p, ul, li {
+        font-size: 1em; /* Tamaño estándar */
+    }
+    .btns {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}

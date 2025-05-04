@@ -1,0 +1,205 @@
+.Franquicia {
+  font-family: sans-serif;
+  background: url('/IMG/MostazaFranquicias.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100.3vh;
+  overflow-x: hidden;
+  position: relative;
+
+}
+
+a {
+  text-decoration: none;
+  color: #f3f3f3;
+  /* Color del texto */
+  font-weight: bold;
+}
+
+.container h1 {
+  text-align: center;
+  color: #000000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 4rem;
+  margin-top: 120px;
+}
+
+.container h3 {
+  text-align: center;
+  color: #000000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 63px;
+}
+
+.Franquicia h2 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.616);
+  margin-top: 10%;
+}
+
+.Franquicia h3 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  margin-top: 40px;
+}
+
+.LogoRojo img {
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 6%;
+    margin-left: 93%;
+    margin-top: -10%;
+    position: fixed;
+    height: auto;
+}
+
+
+
+.poppins-medium .h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  bottom: 230px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.circle-button {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: rgba(240, 240, 240, 0.021);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.circle-button:hover {
+  background-color: rgb(188, 33, 48);
+}
+
+.circle-button.active {
+  background-color: rgb(227, 31, 43);
+  color: white;
+}
+
+.form-control {
+  left: 10%;
+}
+
+
+
+.section {
+  margin-bottom: 20px;
+}
+
+.text-content h1 {
+  color: #000000;
+  font-size: 20px;
+  font-family: "Poppins", Sans-serif;
+}
+
+.text-content h2 {
+  color: #000000;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.text-content p {
+  margin: 10px 0 0 10px;
+  font-size: 13px;
+}
+
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.FichaTecnica h1{
+  color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 3.9rem;
+}
+.info h2{
+  margin-left: 40px;
+}
+  .info img {
+    width: 100px;
+    border-radius: 8px;
+    margin-left: 23px;
+}
+.info p{
+  color: #000;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+  margin-left: -10px;
+}
+
+.red-boxes {
+  flex: none;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+
+}
+
+.red-boxes p {
+  background-color: #d32f2f;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 4px 30px 30px 0px;
+    margin: -16px 136px 0px -392px;
+    text-align: left;
+    width: 99%;
+    height: 33px;
+}
+
+.p1 {
+  color: #000;
+  text-align: left;
+  margin-left: -10px;
+  position: relative;
+  left: -126px;
+  top: -34px;
+}
+form{
+  box-shadow: none;
+}
+
+.btns{
+  font-size: 20px;
+  background-color: rgb(189, 28, 28);
+  width: 10%;
+  height: auto;
+  float: right;
+  border-radius: 40px;
+}
+

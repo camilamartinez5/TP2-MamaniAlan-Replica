@@ -1,0 +1,122 @@
+.Campañas {
+  font-family: sans-serif;
+  background: url('/IMG/Campañas.png') no-repeat center center;
+  width: 100vw;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  
+
+}
+.Campañas h1{
+  text-align: center;
+  color: #ffffff;
+  font-family: "Latino Type", Sans-serif;
+  font-size: 5.5rem;
+  margin-top: 5%;
+  font-weight: 550;
+}
+
+  
+a {
+  text-decoration: none;
+  color: #f3f3f3; /* Color del texto */
+  font-weight: bold;
+}
+.LogoBlanco  {
+  background: url('/IMG/LogoBlanco.png') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 12%;
+  width: 5%;
+  margin-left: 93%;
+  position: fixed;
+}
+.loguitoPlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.loguitoPlay a img {
+  transition: transform 0.3s ease;
+    background-size: cover;
+    height: 14vh;
+    width: 14vh;
+    margin-top: 45px;
+    transition: opacity 0.3s ease;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.loguitoPlay a img:hover {
+  background-color: #ad2828;
+}
+
+.loguitoPlay p {
+  color: #f3f3f3;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  width: 50%; 
+  margin: auto;
+  margin-top: -50px ;
+}
+.container-fluid1 {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  width: 50%; 
+  margin: auto;
+}
+.container-fluid2{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  width: 50%; 
+  margin: auto;
+}
+
+@media screen and (max-width: 850px) {
+  .Campañas h1 {
+    font-size: 4rem;
+    margin-top: 13%;
+}
+
+  .LogoBlanco {
+    width: 13%;
+    height: 10%;
+    margin-top: -55px;
+    margin-left: 82%;
+  }
+
+  .loguitoPlay a img {
+    height: 12vh;
+    width: 12vh;
+  }
+
+  .container-fluid, 
+  .container-fluid1, 
+  .container-fluid2 {
+    width: 80%; 
+  }
+
+  .loguitoPlay p {
+    font-size: 14px; 
+  }
+}

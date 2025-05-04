@@ -1,0 +1,111 @@
+/* Fondo principal (Dino) */
+.Dino {
+    margin: 0;
+    font-family: sans-serif;
+    background: url('/IMG/DinosaurioCajita.jpg') no-repeat center center;
+    background-size: cover; /* Imagen cubre completamente */
+    height: 99.3vh; /* Altura ajustada al viewport */
+    overflow-x: hidden;
+    position: relative; /* Para posicionar el contenido encima */
+    display: block;
+}
+.responsive-image {
+  display: none; /* La imagen responsive está oculta inicialmente */
+  background: url('/IMG/DinosaurioResponsive.jpg');
+}
+
+/* Logotipo circular con transición */
+.loguitoDino a img {
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    background-size: cover;
+    height: 15vh;
+    width: 14vh;
+    margin-top: 16%;
+    margin-left: calc(50% - 7vh); 
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    opacity: 1; 
+}
+
+.loguitoDino a img:hover {
+    opacity: 0.6; 
+}
+
+.textoDino {
+    text-align: center; 
+    font-size: 12px; 
+    color: #ffffff; 
+    margin-top: 8px; 
+    font-weight: bold; 
+}
+
+/* Contenedor de texto superpuesto */
+.elementor-widget-container {
+    position: absolute; /* Superpone el texto sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; /* Color contrastante con el fondo */
+    z-index: 1; /* Asegura que el texto esté encima */
+}
+
+
+.elementor-widget-container h1 {
+    font-size: 2em; 
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    margin-bottom: 20px;
+}
+
+.elementor-widget-container p {
+    font-size: 1em; 
+    margin: 0;
+    padding: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+}
+
+.button-container a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1em;
+    color: white;
+    background-color: #4CAF50; /* Color verde */
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container a:hover {
+    background-color: #388E3C; 
+}
+
+
+@media screen and (max-width: 750px) {
+  .Dino {
+    background-size: contain; 
+    height: auto;
+    
+  }
+
+  .loguitoDino a img {
+    height: 12vh;
+    width: 12vh;
+    margin-top: -191%;
+    margin-left: 40%;
+  }
+
+  .textoDino {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .responsive-image {
+    background: url("/IMG/DinosaurioResponsive.jpg");
+    display: block; 
+    width: 100%; 
+    max-width: 750px; 
+    height: auto;
+}
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/CSS/estilosMenu.css">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark px-3 fixed-top">
+    <div class="container-fluid">
+        <button class="btn" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#menuLateral" style="background-color: rgb(188, 33, 48); border-radius: 50%; border: none;">
+            <img src="/IMG/HamburguesaMenu.png" alt="" style="width: 20px; height: 20px; margin-bottom: 10px;">
+        </button>
+  </nav>
+  
+<div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral"  style="background-color: rgb(188, 33, 48); ">
+    <div class="offcanvas-header">
+
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between otroestilo para el cuerpo" style="background: rgb(188, 33, 48);   overflow: hidden; 
+  height: auto;  line-height: 1; ">
+        <div>
+            <ul class="navbar-nav" style="line-height: 2;" >
+                <li class="nav-item"><a class="nav-link" style="margin-bottom: -10px; margin-top: 0;" href="Index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="Menu.html" style="margin-top: -10px;">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#APP" style="margin-top: -10px;">Mostaza App</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.mostazaweb.com.ar/locales/"  style="margin-top: -10px;">Locales</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="Franquicia.html" style="margin-top: -10px;">Franquicias</a></li>
+                <li class="nav-item"><a class="nav-link" href="Campañas.html" style="margin-top: -10px;">Campañas</a></li>
+                <li class="nav-item"><a class="nav-link" href="Dinosaurio.html" style="margin-top: -10px;">Cajita Mostaza</a></li>
+                <li class="nav-item"><a class="nav-link"
+                        href="https://smle.li/5XaXJCsPXWPCP8Lr?playground=true" style="margin-top: -10px;">Contacto y
+                        Sugerencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://videocv.mostazaweb.com.ar/"  style="margin-top: -10px;">Trabajá en
+                        Mostaza</a></li>
+                <li class="nav-item"><a class="nav-link" href="PoliticayPrivacidad.html"  style="margin-top: -10px;">Politica y
+                        privacidad-Términos y
+                        condiciones de uso</a></li>
+                <li class="nav-item"><a class="nav-link"
+                        href="https://buenosaires.gob.ar/gobierno/atencion-ciudadana/defensa-al-consumidor"  style="margin-top: -10px; margin-bottom: -10px;">Defensa
+                        del
+                        consumidor</a></li>
+            </ul>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/MostazaOk"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Mostaza_ok"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/mostazaok/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@mostazaok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/channel/UCLidLkD0Ncy9a6YWOxDp0yg"><i class="fab fa-youtube"></i></a>
+            <a href="https://ar.linkedin.com/company/mostazaok"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+    </div>
+</div>
+
+  <div id="navbar"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto " >
+              <a class="nav-link" href="#Carnes" onclick="mostrarSeccion('Carnes')" style="color: rgb(227, 31, 43);">Carnes</a>
+              <a class="nav-link" href="#Pollos" onclick="mostrarSeccion('Pollos')" style="color: rgb(227, 31, 43);">Pollos</a>
+              <a class="nav-link" href="#Cero-Carne" onclick="mostrarSeccion('Cero-Carne')" style="color: rgb(227, 31, 43);">Cero Carne</a>
+              <a class="nav-link" href="#Cafeteria" onclick="mostrarSeccion('Cafeteria')" style="color: rgb(227, 31, 43);">Cafeteria</a>
+              <a class="nav-link" href="#Ensaladas" onclick="mostrarSeccion('Ensaladas')" style="color: rgb(227, 31, 43);">Ensaladas</a>
+              <a class="nav-link" href="#Postres" onclick="mostrarSeccion('Postres')" style="color: rgb(227, 31, 43);">Postres</a>
+              <a class="nav-link" href="#Cajita" onclick="mostrarSeccion('Cajita')" style="color: rgb(227, 31, 43);">Cajita</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="Carnes" class="seccion">
+        <div class="card">
+          <img src="IMG/Carnes/Epica-Palta.png" class="card-img-top" alt="Palta">
+          <div class="card-body">
+            <h5 class="card-title text-center">Epica Palta</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Carnes/EpicaHuevo.png" class="card-img-top" alt="Huevo">
+          <div class="card-body">
+            <h5 class="card-title text-center">Epica Huevo</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Carnes/DobleEpicaHuevo.png" class="card-img-top" alt="DobleHuevo">
+          <div class="card-body">
+            <h5 class="card-title text-center">Doble Epica Huevo</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Carnes/BigBangChedar.png" class="card-img-top" alt="BingBangChedar">
+          <div class="card-body">
+            <h5 class="card-title text-center">Big Bang Cheddar</h5>
+          </div>
+        </div>
+
+        <div class="card">
+            <img src="/IMG/Carnes/DobleBigBangChedar.png" class="card-img-top" alt="DobleBigBangChedar">
+            <div class="card-body">
+              <h5 class="card-title text-center">Doble Big Bang Cheddar</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/IMG/Carnes/BoomChedar.png" class="card-img-top" alt="BoomChedar">
+            <div class="card-body">
+              <h5 class="card-title text-center">Boom Cheddar</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/IMG/Carnes/DobleBommChedar.png" class="card-img-top" alt="DobleBoomChedar">
+            <div class="card-body">
+              <h5 class="card-title text-center">Doble Boom Cheddar</h5>
+            </div>
+           </div>
+          <div class="card">
+            <img src="/IMG/Carnes/BaconStar.png" class="card-img-top" alt="BaconStar">
+            <div class="card-body">
+              <h5 class="card-title text-center">Bacon Star</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/IMG/Carnes/DobleBaconStar.png" class="card-img-top" alt="DobleBaconStar">
+            <div class="card-body">
+              <h5 class="card-title text-center">Doble Bacon Star</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/IMG/Carnes/CuartoDeluxe.png" class="card-img-top" alt="CuartoDeluxe">
+            <div class="card-body">
+              <h5 class="card-title text-center">Cuarto Deluxe</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/IMG/Carnes/DobleCuartoDeluxe.png" class="card-img-top" alt="DobleCuartoDeluxe">
+            <div class="card-body">
+              <h5 class="card-title text-center">Doble Cuarto Deluxe</h5>
+            </div>
+           </div>
+          <div class="card">
+            <img src="/IMG/Carnes/CheseeBacon.png" class="card-img-top" alt="CheseeBacon">
+            <div class="card-body">
+              <h5 class="card-title text-center">Chesee Bacon</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+     
+      <!-- Pollo-->
+      <div id="Pollos" class="seccion">
+          <div class="card">
+            <img src="IMG/Pollos/PolloXLPalta.png" class="card-img-top" alt="Palta">
+          <div class="card-body">
+          <h5 class="card-title text-center">Pollo XL Palta</h5>
+           </div>
+          </div>
+          <div class="card">
+            <img src="/IMG/Pollos/PolloXLTasty.png" class="card-img-top" alt="Tasty">
+            <div class="card-body">
+          <h5 class="card-title text-center">Pollo XL Tasty</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/IMG/Pollos/PolloXLCrixpy.png" class="card-img-top" alt="Crispy">
+            <div class="card-body">
+          <h5 class="card-title text-center">Pollo XL Crispy</h5>
+            </div>
+           </div>
+          <div class="card">
+            <img src="/IMG/Pollos/NuggetsBaconChedar.png" class="card-img-top" alt="NuggetsBaconChedar">
+            <div class="card-body">
+              <h5 class="card-title text-center">Nuggets<br> Bacon Cheddar</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/IMG/Pollos/Nuggets.png" class="card-img-top" alt="Nuggets">
+            <div class="card-body">
+              <h5 class="card-title text-center">Nuggets</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/IMG/Pollos/EnsaladaRoyalGrill.png" class="card-img-top" alt="EnsaladaRoyalGrill">
+            <div class="card-body">
+              <h5 class="card-title text-center">Ensalada<br> Royal Grill</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/IMG/Pollos/EnsaladaCesarGrill.png" class="card-img-top" alt="EnsaladaCesarGrill">
+            <div class="card-body">
+              <h5 class="card-title text-center">Ensalada Cesar<br> Pollo Grill</h5>
+            </div>
+           </div>
+          <div class="card">
+            <img src="/IMG/Pollos/WrapCheddar.png" class="card-img-top" alt="WrapCheddar">
+            <div class="card-body">
+              <h5 class="card-title text-center">Wrap<br> Pollo Cheddar</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Cero-Carne-->
+      <div id="Cero-Carne" class="seccion">
+        <div class="card">
+          <img src="IMG/Cero-Carne/VeggieCheese.png" class="card-img-top" alt="VeggieCheese">
+        <div class="card-body">
+        <h5 class="card-title text-center">Veggie Cheese</h5>
+         </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Cero-Carne/Veggie.png" class="card-img-top" alt="Veggie">
+          <div class="card-body">
+        <h5 class="card-title text-center">Veggie</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Cero-Carne/EnsaladaCesarVeggie.png" class="card-img-top" alt="EnsaladaCesarVeggie">
+          <div class="card-body">
+            <h5 class="card-title text-center">Ensalada<br> Cesar Veggie</h5>
+          </div>
+         </div>
+        <div class="card">
+          <img src="/IMG/Cero-Carne/EnsaladaCeroCarne.png" class="card-img-top" alt="EnsaladaCeroCarne">
+          <div class="card-body">
+            <h5 class="card-title text-center">Ensalada<br> Cero Carne</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Cero-Carne/WrapCeroCrne.png" class="card-img-top" alt="WrapCeroCrne">
+          <div class="card-body">
+            <h5 class="card-title text-center">Wrap<br> Cero Carne</h5>
+          </div>
+        </div>
+      </div>
+
+      <!--Cafeteria-->
+      <div id="Cafeteria" class="seccion">
+        <div class="card">
+          <img src="IMG/Cafeteria/CafeEspresso.png" class="card-img-top" alt="CafeEspresso">
+        <div class="card-body">
+        <h5 class="card-title text-center">Cafe Espresso</h5>
+         </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Cafeteria/CapuccinoEspeciales.png" class="card-img-top" alt="CapuccinoEspeciales">
+          <div class="card-body">
+        <h5 class="card-title text-center">Capuccino Especiales</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Cafeteria/SandwichHuevo&Palta.png" class="card-img-top" alt="SandwichHuevo&Palta">
+          <div class="card-body">
+        <h5 class="card-title text-center">Sandwich<br> Huevo & Palta</h5>
+          </div>
+         </div>
+        <div class="card">
+          <img src="/IMG/Cafeteria/TostadoXLExtraCheddar.png" class="card-img-top" alt="TostadoXLExtraCheddar">
+          <div class="card-body">
+            <h5 class="card-title text-center">Tostado XL<br> Extra Cheddar</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Cafeteria/TostadoXLJamonyQueso.png" class="card-img-top" alt="TostadoXLJamonyQueso">
+          <div class="card-body">
+            <h5 class="card-title text-center">Tostado XL<br> Jamon y Queso</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Cafeteria/TostadoXLLomitoyCheddar.png" class="card-img-top" alt="TostadoXLLomitoyCheddar">
+          <div class="card-body">
+            <h5 class="card-title text-center"> Tostado XL<br> Lomito y Cheddar</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/IMG/Cafeteria/Medialunas.png" class="card-img-top" alt="Medialunas">
+          <div class="card-body">
+            <h5 class="card-title text-center"> Medialunas</h5>
+          </div>
+         </div>
+        <div class="card">
+          <img src="/IMG/Cafeteria/AlfajorCachafaz.png" class="card-img-top" alt="AlfajorCachafaz">
+          <div class="card-body">
+            <h5 class="card-title text-center"> Alfajor Cachafaz</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Cero-Carne-->
+    <div id="Cero-Carne" class="seccion">
+      <div class="card">
+        <img src="IMG/Cero-Carne/VeggieCheese.png" class="card-img-top" alt="VeggieCheese">
+      <div class="card-body">
+      <h5 class="card-title text-center">Veggie Cheese</h5>
+       </div>
+      </div>
+      <div class="card">
+        <img src="/IMG/Cero-Carne/Veggie.png" class="card-img-top" alt="Veggie">
+        <div class="card-body">
+      <h5 class="card-title text-center">Veggie</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/IMG/Cero-Carne/EnsaladaCesarVeggie.png" class="card-img-top" alt="EnsaladaCesarVeggie">
+        <div class="card-body">
+          <h5 class="card-title text-center">Ensalada<br> Cesar Veggie</h5>
+        </div>
+       </div>
+      <div class="card">
+        <img src="/IMG/Cero-Carne/EnsaladaCeroCarne.png" class="card-img-top" alt="EnsaladaCeroCarne">
+        <div class="card-body">
+          <h5 class="card-title text-center">Ensalada<br> Cero Carne</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/IMG/Cero-Carne/WrapCeroCrne.png" class="card-img-top" alt="WrapCeroCrne">
+        <div class="card-body">
+          <h5 class="card-title text-center">Wrap<br> Cero Carne</h5>
+        </div>
+      </div>
+    </div>
+
+    <!--Ensaladas-->
+    <div id="Ensaladas" class="seccion">
+      <div class="card">
+        <img src="IMG/Ensaladas/EnsaladaPalta&Huevo.png" class="card-img-top" alt="EnsaladaPalta&Huevo">
+      <div class="card-body">
+      <h5 class="card-title text-center">Ensalada<br> Palta & Huevo</h5>
+       </div>
+      </div>
+      <div class="card">
+        <img src="/IMG/Ensaladas/EnsaladaRoyalGrill.png" class="card-img-top" alt="EnsaladaRoyalGrill">
+        <div class="card-body">
+      <h5 class="card-title text-center">Ensalada<br> Royal Grill</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/IMG/Ensaladas/EnsaladaRoyalCrispy.png" class="card-img-top" alt="EnsaladaRoyalCrispy">
+        <div class="card-body">
+      <h5 class="card-title text-center">Ensalada<br> Royal Crispy</h5>
+        </div>
+       </div>
+      <div class="card">
+        <img src="/IMG/Ensaladas/EnsaladaCesarGrill.png" class="card-img-top" alt="EnsaladaCesarGrill">
+        <div class="card-body">
+          <h5 class="card-title text-center">Ensalada Cesar<br> Pollo Grill</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/IMG/Ensaladas/EnsaladaCesarCrispy.png" class="card-img-top" alt="EnsaladaCesarCrispy">
+        <div class="card-body">
+          <h5 class="card-title text-center">Ensalada Cesar<br> Pollo Crispy</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/IMG/Ensaladas/EnsaladaCesarVeggie.png" class="card-img-top" alt="EnsaladaCesarVeggie">
+        <div class="card-body">
+          <h5 class="card-title text-center"> Ensalada<br> Cesar Veggie</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/IMG/Ensaladas/EnsaladaCeroCarne.png" class="card-img-top" alt="EnsaladaCeroCarne">
+        <div class="card-body">
+          <h5 class="card-title text-center"> Ensalada<br> Cero Carne</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Postres-->
+  <div id="Postres" class="seccion">
+    <div class="card">
+      <img src="IMG/Postres/TwistAfogatto.png" class="card-img-top" alt="TwistAfogatto">
+    <div class="card-body">
+    <h5 class="card-title text-center">Twist Afogatto</h5>
+     </div>
+    </div>
+    <div class="card">
+      <img src="/IMG/Postres/Twist.png" class="card-img-top" alt="Twist">
+      <div class="card-body">
+    <h5 class="card-title text-center">Twist</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/IMG/Postres/Shakes.png" class="card-img-top" alt="Shakes">
+      <div class="card-body">
+        <h5 class="card-title text-center">Shakes</h5>
+      </div>
+     </div>
+    <div class="card">
+      <img src="/IMG/Postres/Sundae.png" class="card-img-top" alt="Sundae">
+      <div class="card-body">
+        <h5 class="card-title text-center">Sundae</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/IMG/Postres/Conos.png" class="card-img-top" alt="Conos">
+      <div class="card-body">
+        <h5 class="card-title text-center">Conos</h5>
+      </div>
+    </div>
+  </div>
+
+  <!--Cajita-->
+  <div id="Cajita" class="seccion">
+    <div class="card">
+      <img src="IMG/Cajitas/ColeccionDinosaurios.png" class="card-img-top" alt="ColeccionDinosaurios">
+    <div class="card-body">
+    <h5 class="card-title text-center">Coleccion<br> Dinosaurios</h5>
+     </div>
+    </div>
+    <div class="card">
+      <img src="/IMG/Cajitas/CajitaMostazaNuggets+Juguete.png" class="card-img-top" alt="CajitaMostazaNuggets+Juguete">
+      <div class="card-body">
+    <h5 class="card-title text-center">Cajita Mostaza<br> Nuggets + Juguete</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/IMG/Cajitas/CajitaMostazaHamb.cQueso+Juguete.png" class="card-img-top" alt="CajitaMostazaHamb.cQueso+Juguete">
+      <div class="card-body">
+        <h5 class="card-title text-center">Cajita Mostaza<br> Hamb.c/Queso + Juguete</h5>
+      </div>
+     </div>
+    <div class="card">
+      <img src="/IMG/Cajitas/CajitaMostazaHamburguesa+Juguete.png" class="card-img-top" alt="CajitaMostazaHamburguesa+Juguete">
+      <div class="card-body">
+        <h5 class="card-title text-center">Cajita Mostaza Hamburguesa + Juguete</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/IMG/Cajitas/CajitaMostazaTostado+Juguete.png" class="card-img-top" alt="CajitaMostazaTostado+Juguete">
+      <div class="card-body">
+        <h5 class="card-title text-center">Cajita Mostaza<br> Tostado + Juguete</h5>
+      </div>
+    </div>
+  </div>
+            <script>
+              function mostrarSeccion(seccionId) {
+    // Oculta todas las secciones
+    const secciones = document.querySelectorAll('.seccion');
+    secciones.forEach(seccion => seccion.classList.remove('activa'));
+
+    // Muestra la sección seleccionada
+    document.getElementById(seccionId).classList.add('activa');
+
+    // Asegura que "Carnes" se oculte al seleccionar otro botón
+    if (seccionId !== 'Carnes') {
+        document.getElementById('Carnes').style.display = "none";
+    } else {
+        document.getElementById('Carnes').style.display = "block";
+    }
+    document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('selected'));
+        this.classList.add('selected');
+    });
+});
+}               
+           </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+    
+</body>
+</html>
